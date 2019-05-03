@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.main.activity.LoginActivity">
+
+    <!--<Button
+        android:id="@+id/btn"
+        android:text="显示loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/login_layout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_104"
+            >
+            <TextView
+                android:id="@+id/hello"
+                android:textColor="@color/gFA6A13"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/Hello_for_better_service"
+                android:layout_marginTop="@dimen/dp_36"
+                android:layout_marginLeft="@dimen/dp_23"
+                android:layout_width="@dimen/dp_201"
+                android:layout_height="@dimen/dp_22" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp_23"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_below="@id/hello"
+                android:textSize="@dimen/sp_28"
+                android:text="@string/Please_log_in_and_travel_around"
+                android:layout_width="@dimen/dp_198"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <include layout="@layout/base_login"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/get_verify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/get_verify_code"/>
+    </LinearLayout>
+
+
+</LinearLayout>
